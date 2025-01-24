@@ -4,10 +4,61 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .moviePic {
+            height: 300px;
+            width: 200px;
+            opacity: 0.9;
+            border-radius: 10px;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+
+        .moviePic:hover {
+            transform: scale(1.05);
+            opacity: 1;
+        }
+
+        .movieDetail {
+            position: relative;
+            top: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<div class="container">
+        <img src="movie-poster.jpg" alt="Movie Poster" class="moviePic">
+        <p class="movieDetail">
+            This is the description of the movie. It provides an overview of the plot, main characters, and key themes to give the audience a glimpse of what to expect.
+        </p>
+    </div>
     <script type="text/javascript" src="./script.js">
 </script>
 
